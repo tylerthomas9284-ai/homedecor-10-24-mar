@@ -1,0 +1,146 @@
+/* Services Page Specific Styles */
+
+.services-hero {
+    height: 50vh;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #ffffff;
+}
+
+.services-detail {
+    padding: 5rem 0;
+    background-color: #ffffff;
+}
+
+.service-detail-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.service-detail-item:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.service-detail-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.service-detail-content.order-1 {
+    order: 1;
+}
+
+.service-detail-content.order-2 {
+    order: 2;
+}
+
+.service-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.service-detail-icon {
+    width: 3rem;
+    height: 3rem;
+    background-color: #f3f4f6;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #111827;
+}
+
+.service-header h2 {
+    font-size: 1.5rem;
+    color: #111827;
+    margin: 0;
+}
+
+.service-detail-description {
+    color: #6b7280;
+    line-height: 1.75;
+}
+
+.service-features {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.service-features li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    color: #374151;
+}
+
+.service-features svg {
+    flex-shrink: 0;
+    color: #059669;
+    margin-top: 0.125rem;
+}
+
+.service-detail-image {
+    order: 2;
+}
+
+.service-detail-image.order-1 {
+    order: 1;
+}
+
+.service-detail-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.services-note {
+    background-color: #f9fafb;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.note-text {
+    color: #6b7280;
+    font-size: 0.875rem;
+    line-height: 1.75;
+}
+
+.booking-section {
+    padding: 5rem 0;
+    background-color: #f9fafb;
+}
+
+@media (max-width: 768px) {
+    .service-detail-item {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .service-detail-content.order-1,
+    .service-detail-content.order-2,
+    .service-detail-image,
+    .service-detail-image.order-1 {
+        order: unset;
+    }
+}
